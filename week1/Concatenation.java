@@ -9,8 +9,9 @@ public class Concatenation {
         System.out.println("I hit the jackpot and won $" +money+ "dollars!");
 
         System.out.println(color+" "+money);
-    }
-         System.out.println("This will be my statement regarding my favorite color which is " +color+ " and will let you know that i won $ " +money+ " dollars");
+        System.out.println("This will be my statement regarding my favorite color which is " +color+ " and will let you know that i won $ " +money+ " dollars");
 
+    }
+         
 }
 
