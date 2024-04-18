@@ -17,7 +17,7 @@ public class MyDataTypes {
 
         boolean dry = false;
 
-        if (dry); {
+        if (dry) {
 
         System.out.println("T");
         } else  {
@@ -33,12 +33,3 @@ public class MyDataTypes {
     
  }
 
-
-
-
-
-
-
-
-
-}
