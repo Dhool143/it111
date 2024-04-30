@@ -25,7 +25,7 @@ counter += 1;
 }
 
 String message;
-char letterGarade;
+char letterGrade;
 
 
 counter -= 1;
@@ -34,30 +34,31 @@ average = total/counter;
  
 System.out.println("You have earned at average grade of " +average);
 
-if(average >= 90 && average < 100) {
-letterGarade = 'A';
-message = "Excelent work!";
+if(average >= 90 && average <= 100) {
+letterGrade = 'A';
+message = "Excellent work!";
 
 } else if (average >= 80 && average < 90) {
-letterGarade = 'B';
+letterGrade = 'B';
 message = "Solid work!";
 
 
 }else if (average >= 70 && average < 80) {
-letterGarade = 'C';
-message = "More studing necessary";
+letterGrade = 'C';
+message = "More studying necessary";
 
 } else if (average >= 65 && average < 70) {
-letterGarade = 'D';
-message = "Sqeajing by!";
+letterGrade = 'D';
+message = "Squeaking by!";
+
 } else {
-letterGarade = 'A';
-message = "Excelent work!";
+letterGrade = 'F';
+message = "Not Excellent work!";
 
 
 
 }
-System.out.println("You have earned the following letter grade "  +letterGarade+ ", and here is the message: " +message);
+System.out.println("You have earned the following letter grade "  +letterGrade+ ", and here is the message: " +message);
 
 
     }
