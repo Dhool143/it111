@@ -13,8 +13,9 @@ public class MyConstants {
 
         // ask the end user to enter the touchdowns, con and fq
     
-          Scanner input = new Scanner(System.in);
-          System.out.println("Please enter the number of touchdowns!");
+         Scanner input = new Scanner(System.in);
+          
+         System.out.println("Please enter the number of touchdowns!");
           td = input.nextInt() * TOUCHDOWN;
           System.out.println("Please enter the number of conversions!");
           con = input.nextInt() * CONVERSION;
