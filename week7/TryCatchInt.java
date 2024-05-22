@@ -1,0 +1,35 @@
+package week7;
+
+import java.util.Scanner;
+
+public class TryCatchInt {
+    
+
+    public static void main(String[] args) {
+        
+System.out.println("Please enter a number!!!");
+
+   try {
+
+int i ;
+Scanner input = new Scanner(System.in);
+
+i = input.nextInt();
+
+System.out.println("Your interger is: " +i);
+
+   } catch(Exception i) {
+
+// if there are problem....
+
+   } catch(Exception e) {
+
+System.out.println("We have an error: " +e);
+
+
+   }
+
+
+
+    }
+}
