@@ -1,4 +1,4 @@
-package week7;
+
 
 import java.util.Scanner;
 
@@ -16,13 +16,13 @@ Scanner input = new Scanner(System.in);
 
 i = input.nextInt();
 
-System.out.println("Your interger is: " +i);
+System.out.println("Your integer is: " +i);
 
-   } catch(Exception i) {
+   } catch(Exception e) {
 
 // if there are problem....
 
-   } catch(Exception e) {
+
 
 System.out.println("We have an error: " +e);
 

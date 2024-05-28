@@ -1,4 +1,4 @@
-package week7;
+
 import java.io.File;
 import static java.lang.System.out;
 
@@ -24,32 +24,12 @@ System.out.println(files[i]);
 
 
 }
-
   }else {
 // we are going to be said
 System.out.println("Directory doesn't exits!!!");
 
 
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
