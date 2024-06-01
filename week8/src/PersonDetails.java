@@ -4,15 +4,15 @@ public class PersonDetails {
 
             //    this file will have a main method
 
-            person firstPerson;
-            person secondPerson;
-            person thirdperson;
+            Person firstPerson;
+            Person secondPerson;
+            Person thirdperson;
 
 //         in the process of creating an object from my Person class
 
-            firstPerson = new person();
-            secondPerson = new person();
-            thirdperson = new person();
+            firstPerson = new Person();
+            secondPerson = new Person();
+            thirdperson = new Person();
 
 //        we will be entering the info, assigning values to our fields
 
@@ -63,7 +63,7 @@ public class PersonDetails {
 
             firstPerson.display();
             System.out.println("Preliminary Rate for " +firstPerson.name+ ": " +firstPerson.getRate(monthlyRate) + " dollars");
-            System.out.println("Adjustments: " +firstPerson,assumeGender(adjustedRate) + " dollars");
+            System.out.println("Adjustments: " +firstPerson.assumeGender(adjustedRate) + " dollars");
             System.out.print("Here is  " +firstPerson.name+ " 's total monthly premium: ");
             System.out.println(firstPerson.assumeGender(adjustedRate) +firstPerson.getRate (monthlyRate));
 
@@ -72,15 +72,15 @@ public class PersonDetails {
 
             secondPerson.display();
             System.out.println("Preliminary Rate for " +secondPerson.name+ ": " +secondPerson.getRate(monthlyRate) + " dollars");
-            System.out.println("Adjustments: " +secondPerson,assumeGender(adjustedRate) + " dollars");
+            System.out.println("Adjustments: " +secondPerson.assumeGender(adjustedRate) + " dollars");
             System.out.print("Here is  " +secondPerson.name+ " 's total monthly premium: ");
             System.out.println(secondPerson.assumeGender(adjustedRate) +secondPerson.getRate (monthlyRate));
 
-
+            System.out.println();
 
             thirdperson.display();
             System.out.println("Preliminary Rate for " +thirdperson.name+ ": " +thirdperson.getRate(monthlyRate) + " dollars");
-            System.out.println("Adjustments: " +thirdperson,assumeGender(adjustedRate) + " dollars");
+            System.out.println("Adjustments: " +thirdperson.assumeGender(adjustedRate) + " dollars");
             System.out.print("Here is  " +thirdperson.name+ " 's total monthly premium: ");
             System.out.println(thirdperson.assumeGender(adjustedRate) +thirdperson.getRate (monthlyRate));
 

@@ -6,15 +6,17 @@ public class PersonRegular{
     public static void main(String[] args) {
 
         //     to create our variables
+
+
+
         String firstPersonName = "Cathy";
         String secondPersonName = "Kendall";
-
         char firstPersonGender = 'F';
         char secondPersonGender = 'M';
         int firstPersonAge = 33;
         int secondPersonAge = 22;
         String firstPersonCar = "Volkswagon Bug";
-        String secondPersonCar = "Mustang";
+         String secondPersonCar = "Mustang";
         boolean firstPersonViolations = false;
         boolean secondPersonViolations = true;
         int firstPersonCreditScore = 690;
@@ -39,7 +41,7 @@ public class PersonRegular{
         //        poor credit, you will pay more money
 
 
-        if(firstPersonViolations == true && firstPersonCreditScore <= 700) {
+        if(firstPersonViolations == false && firstPersonCreditScore <= 700) {
             monthlyRate1 = 500;
 
         } else {
