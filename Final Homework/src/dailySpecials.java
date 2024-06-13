@@ -19,18 +19,23 @@ public class dailySpecials {
         String coffee = null;
         double price = 0;
         int quantity;
-        boolean saturday = specials.equals("Saturday");
-        boolean sunday = specials.equals("Sunday");
-        boolean monday = specials.equals("Monday");
-        boolean tuesday = specials.equals("Tuesday");
-        boolean wednesday = specials.equals("Wednesday");
-        boolean thursday = specials.equals("Thursday");
-        boolean friday = specials.equals("Friday");
 
-        while (specials.equals("Saturday") || specials.equals("Sunday")) {
-            System.out.println("Please enter a weekdays, not weekend!");
+
+       boolean saturday = specials.equalsIgnoreCase("Saturday");
+       boolean sunday = specials.equalsIgnoreCase("Sunday");
+
+//     !!!! NOW DO THIS !!!!
+
+        while (saturday || sunday) {
+            System.out.println("Please enter a weekday, not weekend!");
             specials = input.next();
-            switch (specials) {
+
+            saturday = specials.equalsIgnoreCase("Saturday");
+            sunday = specials.equalsIgnoreCase("Sunday");
+
+
+        }
+        switch (specials) {
 
                 //  boolean Monday, Tuesday, Wednesday, Thursday,Friday = false;
                 // my cases will be the day of the week
@@ -70,7 +75,7 @@ public class dailySpecials {
                     break;
 
 
-            //    System.out.println("Please enter a valid day, or check your spelling!");
+                //    System.out.println("Please enter a valid day, or check your spelling!");
             }
             System.out.println(specials + "'s coffee of the day is a " + coffee + "  and the price will be $" + price);
             System.out.println("How many " + coffee + "s  would you like to order?");
@@ -79,10 +84,10 @@ public class dailySpecials {
             if (quantity == 0) {
                 System.out.println("Looks like you don't like " + coffee + "s. So sad!!!");
 
-            } else if (quantity ==1) {
+            } else if (quantity == 1) {
                 System.out.println("Looks like you are ordering only 1 " + coffee + " today!");
 
-            } else if( quantity <10 && quantity >=5 ){
+            } else if (quantity >= 5 && quantity < 10) {
                 System.out.print("Look like you qualify for a 10% discount! ");
                 System.out.print("You have ordered " + quantity + " " + coffee + "s, including the discount, this is your total: ");
                 System.out.printf("$%.2f", (quantity * price) * .9);
@@ -90,7 +95,7 @@ public class dailySpecials {
                 System.out.print("You have saved ");
                 System.out.printf("$%.2f", (quantity * price) * .1);
 
-            } else if (quantity >=10) {
+            } else if (quantity >= 10) {
                 System.out.print("Look like you qualify for a 20% discount! ");
                 System.out.print("You have ordered " + quantity + " " + coffee + "s, including the discount, this is your total: ");
                 System.out.printf("$%.2f", (quantity * price) * .8);
@@ -99,19 +104,19 @@ public class dailySpecials {
                 System.out.printf("$%.2f", (quantity * price) * .2);
 
             } else {
-                System.out.print("You have ordered "+ quantity + " " + coffee + "s totalling ");
+                System.out.print("You have ordered " + quantity + " " + coffee + "s totalling ");
                 System.out.printf("$%.2f", (quantity * price));
 
             }
 
 
-
-
-            }
-
         }
 
-    }
+   }
+
+
+
+
 
 
 
